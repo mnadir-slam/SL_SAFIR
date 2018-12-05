@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[ESTIA_QC] (
+    [CQC]       VARCHAR (8)  NOT NULL,
+    [LQC]       VARCHAR (60) NULL,
+    [TRIG]      VARCHAR (2)  NULL,
+    [SEXE]      VARCHAR (2)  NULL,
+    [TQC]       VARCHAR (2)  NULL,
+    [CNP]       INT          NULL,
+    [LCOURRIER] VARCHAR (60) NULL,
+    [LACTIF]    VARCHAR (2)  NULL,
+    CONSTRAINT [PK_ESTIA_QC] PRIMARY KEY CLUSTERED ([CQC] ASC)
+);
+

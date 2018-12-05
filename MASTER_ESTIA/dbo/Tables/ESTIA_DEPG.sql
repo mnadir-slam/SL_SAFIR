@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[ESTIA_DEPG] (
+    [CDEPG]     NUMERIC (38)   NULL,
+    [LDEPG]     NVARCHAR (255) NULL,
+    [LACTIF]    NVARCHAR (255) NULL,
+    [NO_CHRONO] NUMERIC (38)   NULL
+);
+

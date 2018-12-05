@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[D_RUBRIQUE] (
+    [DT_REF]              DATETIME       NULL,
+    [PK_RUBRIQUE]         INT            NOT NULL,
+    [ORIGINE]             VARCHAR (5)    NULL,
+    [CD_SOCIETE]          VARCHAR (1)    NULL,
+    [CD_RUBRIQUE]         VARCHAR (8000) NULL,
+    [NM_RUBRIQUE]         INT            NULL,
+    [LB_RUBRIQUE]         VARCHAR (60)   NULL,
+    [CD_NATURE_RUBRIQUE]  VARCHAR (2)    NULL,
+    [LB_NATURE_RUBRIQUE]  VARCHAR (60)   NULL,
+    [IND_SURLOYER]        VARCHAR (1)    NULL,
+    [IND_FRANCHISE_LOYER] VARCHAR (1)    NULL,
+    CONSTRAINT [PK_D_RUBRIQUE] PRIMARY KEY CLUSTERED ([PK_RUBRIQUE] ASC)
+);
+

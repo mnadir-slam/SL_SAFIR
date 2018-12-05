@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[P_IMMEUBLE_MAJ] (
+    [CD_SOCIETE]           FLOAT (53)     NULL,
+    [CD_AGENCE]            NVARCHAR (255) NULL,
+    [NM_IMMEUBLE]          FLOAT (53)     NULL,
+    [LB_IMMEUBLE]          NVARCHAR (255) NULL,
+    [LB_IMMEUBLE_GED]      NVARCHAR (255) NULL,
+    [CHEMIN_PLAN]          NVARCHAR (255) NULL,
+    [CHEMIN_ETAT_SURFACES] NVARCHAR (255) NULL
+);
+

@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[WRK_ECHEANCIER_BAIL] (
+    [CORG]          VARCHAR (2)     NOT NULL,
+    [CAGENCE]       VARCHAR (2)     NOT NULL,
+    [CGROUPE]       INT             NOT NULL,
+    [CIMMEUB]       INT             NOT NULL,
+    [CLOCAL]        INT             NOT NULL,
+    [OCC]           INT             NOT NULL,
+    [CCOMPTE]       VARCHAR (11)    NOT NULL,
+    [NOBAIL]        INT             NULL,
+    [DATENTQUIT]    DATETIME        NULL,
+    [DATSORQUIT]    DATETIME        NULL,
+    [PERIOD]        INT             NULL,
+    [CRUB]          INT             NULL,
+    [CMETHCAL]      INT             NULL,
+    [DDEB]          DATE            NULL,
+    [DFIN]          DATE            NULL,
+    [DT_DEBUT_MOIS] DATETIME        NULL,
+    [DT_FIN_MOIS]   DATETIME        NULL,
+    [NB_JOURS_MOIS] INT             NULL,
+    [DT_DEBUT]      DATETIME        NULL,
+    [DT_FIN]        DATETIME        NULL,
+    [NB_JOURS]      INT             NULL,
+    [NB_HQLOCAT]    NUMERIC (18, 3) NULL,
+    [DREVIS]        DATETIME        NULL,
+    [NB_HREVIS]     NUMERIC (18, 3) NULL,
+    [MT_MOIS]       AS              (((CONVERT([decimal](18,6),[NB_JOURS],(0))/CONVERT([decimal](15,6),[NB_JOURS_MOIS],(0)))*isnull([NB_HREVIS],[NB_HQLOCAT]))/(12))
+);
+

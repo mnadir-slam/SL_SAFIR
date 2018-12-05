@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[CHEMIN_TF] (
+    [NM_IMMEUBLE]  FLOAT (53)     NULL,
+    [NOM_IMMEUBLE] NVARCHAR (255) NULL,
+    [CHEMIN_TF]    NVARCHAR (255) NULL,
+    [F4]           NVARCHAR (255) NULL
+);
+

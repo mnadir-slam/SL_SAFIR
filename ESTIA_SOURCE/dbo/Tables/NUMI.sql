@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[NUMI] (
+    [CNUMI]     VARCHAR (50)  NULL,
+    [LNUMI]     NVARCHAR (50) NULL,
+    [PERIOD##1] VARCHAR (50)  NULL,
+    [PERIOD##2] VARCHAR (50)  NULL,
+    [PERIOD##3] VARCHAR (50)  NULL,
+    [PERIOD##4] VARCHAR (50)  NULL,
+    [PERIOD##5] VARCHAR (50)  NULL,
+    [TRIG]      VARCHAR (50)  NULL,
+    [LACTIF]    VARCHAR (50)  NULL
+);
+

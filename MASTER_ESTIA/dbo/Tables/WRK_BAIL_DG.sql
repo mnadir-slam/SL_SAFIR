@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[WRK_BAIL_DG] (
+    [PK_BAIL]         INT             NULL,
+    [CCOMPTE]         VARCHAR (22)    NOT NULL,
+    [NOBAIL]          INT             NOT NULL,
+    [MT_DG_PRINCIPAL] NUMERIC (13, 2) NULL,
+    [MT_DG_ANNEXE]    NUMERIC (13, 2) NULL,
+    CONSTRAINT [PK_WRK_BAIL_DG] PRIMARY KEY CLUSTERED ([CCOMPTE] ASC, [NOBAIL] ASC)
+);
+

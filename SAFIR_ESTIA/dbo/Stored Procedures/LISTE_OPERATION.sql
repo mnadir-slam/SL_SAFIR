@@ -1,0 +1,30 @@
+﻿-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[LISTE_OPERATION] 
+(
+	@PK_IMMEUBLE NVARCHAR(MAX),
+	@ANNEE_DEB_OPERATION INT
+)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+SELECT POPE.PK_POPE
+	 , POPE.COPE
+	 , CONCAT(POPE.COPE + ' - ', CONCAT(POPE.LOPE + ' - TR', TRANCHE.CTRANCHE)) AS NOM_OPERATION
+FROM
+	MASTER_ESTIA..ESTIA_POPE POPE
+	LEFT JOIN MASTER_ESTIA..ESTIA_TRANCHE TRANCHE
+	ON TRANCHE.CORG = POPE.CORG AND TRANCHE.COPE = POPE.COPE
+	LEFT JOIN MASTER_ESTIA..ESTIA_GROUPE GROUPE
+	ON GROUPE.CORG = POPE.CORG AND GROUPE.CGROUPE = POPE.CGROUPE
+WHERE POPE.CORG = '11'
+AND GROUPE.PK_GROUPE IN (SELECT VALUE FROM dbo.ufn_SplitMultiValue(@PK_IMMEUBLE,','))
+AND DATEPART(YEAR, TRANCHE.DDEXEC) >= @ANNEE_DEB_OPERATION
+
+END

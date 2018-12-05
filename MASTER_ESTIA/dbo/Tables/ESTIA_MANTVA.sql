@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[ESTIA_MANTVA] (
+    [PK_MANTVA] INT             IDENTITY (1, 1) NOT NULL,
+    [CORG]      VARCHAR (4)     NOT NULL,
+    [CMANDAT]   VARCHAR (16)    NOT NULL,
+    [DDEB]      DATE            NOT NULL,
+    [DFIN]      DATE            NOT NULL,
+    [DEFFETD]   DATE            NULL,
+    [TAUXD]     NUMERIC (17, 2) NULL,
+    [TAUXP]     NUMERIC (17, 2) NULL,
+    [TRIG]      VARCHAR (2)     NULL,
+    CONSTRAINT [PK_ESTIA_MANTVA] PRIMARY KEY CLUSTERED ([CORG] ASC, [CMANDAT] ASC, [DDEB] ASC, [DFIN] ASC)
+);
+

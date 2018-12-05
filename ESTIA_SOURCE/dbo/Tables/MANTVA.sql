@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[MANTVA] (
+    [CORG]    VARCHAR (50) NULL,
+    [CMANDAT] VARCHAR (50) NULL,
+    [DDEB]    VARCHAR (50) NULL,
+    [DFIN]    DATE         NULL,
+    [DEFFETD] DATE         NULL,
+    [TAUXD]   VARCHAR (50) NULL,
+    [TAUXP]   VARCHAR (50) NULL,
+    [TRIG]    VARCHAR (50) NULL
+);
+

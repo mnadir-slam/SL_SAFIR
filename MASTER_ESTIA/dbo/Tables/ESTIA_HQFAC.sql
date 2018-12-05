@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[ESTIA_HQFAC] (
+    [PK_HQFAC]  INT             IDENTITY (1, 1) NOT NULL,
+    [CORG]      VARCHAR (4)     NULL,
+    [CCOMPTE]   VARCHAR (22)    NULL,
+    [NOLOCAT]   INT             NULL,
+    [CSTE]      VARCHAR (2)     NULL,
+    [TRUB]      VARCHAR (50)    NULL,
+    [CRUB]      VARCHAR (3)     NULL,
+    [REF]       VARCHAR (50)    NULL,
+    [MONTANT]   NUMERIC (18, 2) NULL,
+    [SENS]      VARCHAR (2)     NULL,
+    [ECHEANCE]  VARCHAR (10)    NULL,
+    [TRAIT]     VARCHAR (6)     NULL,
+    [CCPT]      VARCHAR (50)    NULL,
+    [DDEBCONS]  DATE            NULL,
+    [DFINCONS]  DATE            NULL,
+    [DATEC]     DATE            NULL,
+    [TRIG]      VARCHAR (50)    NULL,
+    [PERIODE]   VARCHAR (50)    NULL,
+    [CNATRUB]   VARCHAR (2)     NULL,
+    [CTYPDEC]   VARCHAR (50)    NULL,
+    [CJOURNAL]  VARCHAR (6)     NULL,
+    [EDITQUIT]  VARCHAR (50)    NULL,
+    [REFREJET]  VARCHAR (50)    NULL,
+    [CRATPBORD] VARCHAR (50)    NULL
+);
+

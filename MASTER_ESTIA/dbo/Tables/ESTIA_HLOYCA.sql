@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[ESTIA_HLOYCA] (
+    [PK_HLOYCA]   INT             IDENTITY (1, 1) NOT NULL,
+    [FK_ORG]      INT             NULL,
+    [FK_AGENCE]   INT             NULL,
+    [FK_GROUPE]   INT             NULL,
+    [FK_IMMEUB]   INT             NULL,
+    [FK_LOCAL]    INT             NULL,
+    [FK_LOCATION] INT             NULL,
+    [FK_COMPTE]   INT             NULL,
+    [FK_BAIL]     INT             NULL,
+    [CORG]        VARCHAR (4)     NOT NULL,
+    [CAGENCE]     VARCHAR (4)     NOT NULL,
+    [CGROUPE]     INT             NOT NULL,
+    [CIMMEUB]     INT             NOT NULL,
+    [CLOCAL]      INT             NOT NULL,
+    [OCC]         INT             NOT NULL,
+    [DDEB]        DATE            NOT NULL,
+    [MTPROVI]     NUMERIC (17, 2) NULL,
+    [MTFINAL]     NUMERIC (17, 2) NULL,
+    [DMAJ]        DATE            NULL,
+    [UTIL]        VARCHAR (24)    NULL,
+    [TRIG]        VARCHAR (2)     NULL,
+    [DREVIS]      DATE            NULL,
+    [LRATTRAP]    VARCHAR (1)     NULL,
+    CONSTRAINT [PK_ESTIA_HLOYCA] PRIMARY KEY CLUSTERED ([CORG] ASC, [CAGENCE] ASC, [CGROUPE] ASC, [CIMMEUB] ASC, [CLOCAL] ASC, [OCC] ASC, [DDEB] ASC)
+);
+

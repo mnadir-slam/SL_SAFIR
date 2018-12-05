@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>ESTIA_SOURCE</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{42ae765b-ada0-487e-81b0-aba2f4ebd453}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>ESTIA_SOURCE</RootNamespace>
+    <AssemblyName>ESTIA_SOURCE</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\VENTPCHA.sql" />
+    <Build Include="dbo\Tables\USALOC.sql" />
+    <Build Include="dbo\Tables\TYPROPR.sql" />
+    <Build Include="dbo\Tables\TYPLOG.sql" />
+    <Build Include="dbo\Tables\TYPECRI.sql" />
+    <Build Include="dbo\Tables\TYPCOM.sql" />
+    <Build Include="dbo\Tables\TVA.sql" />
+    <Build Include="dbo\Tables\TSLIEN.sql" />
+    <Build Include="dbo\Tables\TSECR.sql" />
+    <Build Include="dbo\Tables\TSCAT.sql" />
+    <Build Include="dbo\Tables\TRANCHE.sql" />
+    <Build Include="dbo\Tables\TRAIT.sql" />
+    <Build Include="dbo\Tables\TIERSF.sql" />
+    <Build Include="dbo\Tables\TIERS.sql" />
+    <Build Include="dbo\Tables\TAUX.sql" />
+    <Build Include="dbo\Tables\TASS.sql" />
+    <Build Include="dbo\Tables\SURFLOC.sql" />
+    <Build Include="dbo\Tables\SCRITDP.sql" />
+    <Build Include="dbo\Tables\RUBPER.sql" />
+    <Build Include="dbo\Tables\RUB.sql" />
+    <Build Include="dbo\Tables\QC.sql" />
+    <Build Include="dbo\Tables\POPS1.sql" />
+    <Build Include="dbo\Tables\POPE.sql" />
+    <Build Include="dbo\Tables\PLOCAL.sql" />
+    <Build Include="dbo\Tables\PLANC.sql" />
+    <Build Include="dbo\Tables\PIOPE.sql" />
+    <Build Include="dbo\Tables\PERIODICITE.sql" />
+    <Build Include="dbo\Tables\PECRIP.sql" />
+    <Build Include="dbo\Tables\PDEPR.sql" />
+    <Build Include="dbo\Tables\PDEPOP.sql" />
+    <Build Include="dbo\Tables\PCRITDEP.sql" />
+    <Build Include="dbo\Tables\PAYS.sql" />
+    <Build Include="dbo\Tables\PABASIT.sql" />
+    <Build Include="dbo\Tables\ORG.sql" />
+    <Build Include="dbo\Tables\NUMI.sql" />
+    <Build Include="dbo\Tables\NEGOCH.sql" />
+    <Build Include="dbo\Tables\NATRUB.sql" />
+    <Build Include="dbo\Tables\MOTVAC.sql" />
+    <Build Include="dbo\Tables\MOTIF.sql" />
+    <Build Include="dbo\Tables\MOTDDE.sql" />
+    <Build Include="dbo\Tables\MODREG.sql" />
+    <Build Include="dbo\Tables\METREV.sql" />
+    <Build Include="dbo\Tables\MENPRIN.sql" />
+    <Build Include="dbo\Tables\MANTVA.sql" />
+    <Build Include="dbo\Tables\MANSEC.sql" />
+    <Build Include="dbo\Tables\MANPROP.sql" />
+    <Build Include="dbo\Tables\MANPAT.sql" />
+    <Build Include="dbo\Tables\MANGES.sql" />
+    <Build Include="dbo\Tables\LOCATION.sql" />
+    <Build Include="dbo\Tables\LOCASSUR.sql" />
+    <Build Include="dbo\Tables\LOCAL.sql" />
+    <Build Include="dbo\Tables\LIENV.sql" />
+    <Build Include="dbo\Tables\LIENMO.sql" />
+    <Build Include="dbo\Tables\LIENLOC.sql" />
+    <Build Include="dbo\Tables\LIENBN.sql" />
+    <Build Include="dbo\Tables\LCAUTION.sql" />
+    <Build Include="dbo\Tables\LBUDLOC.sql" />
+    <Build Include="dbo\Tables\L_RECUPERATION_ESTIA.sql" />
+    <Build Include="dbo\Tables\JOURNAL.sql" />
+    <Build Include="dbo\Tables\INTBT.sql" />
+    <Build Include="dbo\Tables\INDICE.sql" />
+    <Build Include="dbo\Tables\IMMEUB.sql" />
+    <Build Include="dbo\Tables\HTRCA.sql" />
+    <Build Include="dbo\Tables\HREVI.sql" />
+    <Build Include="dbo\Tables\HQRBAIL.sql" />
+    <Build Include="dbo\Tables\HQLOCAT.sql" />
+    <Build Include="dbo\Tables\HQLOCAL.sql" />
+    <Build Include="dbo\Tables\HQFAC.sql" />
+    <Build Include="dbo\Tables\HLOYCA.sql" />
+    <Build Include="dbo\Tables\HDEPCS.sql" />
+    <Build Include="dbo\Tables\HAVENAN.sql" />
+    <Build Include="dbo\Tables\GRPSEC.sql" />
+    <Build Include="dbo\Tables\GROUPE.sql" />
+    <Build Include="dbo\Tables\FINDIV.sql" />
+    <Build Include="dbo\Tables\ENTFAC.sql" />
+    <Build Include="dbo\Tables\EMPLOY.sql" />
+    <Build Include="dbo\Tables\ECRITAUX.sql" />
+    <Build Include="dbo\Tables\ECRITANA.sql" />
+    <Build Include="dbo\Tables\ECRIB.sql" />
+    <Build Include="dbo\Tables\ECRAC.sql" />
+    <Build Include="dbo\Tables\EBUDLOC.sql" />
+    <Build Include="dbo\Tables\DPROCTX.sql" />
+    <Build Include="dbo\Tables\DETSEC.sql" />
+    <Build Include="dbo\Tables\DEMINT.old.sql" />
+    <Build Include="dbo\Tables\DEMINT.sql" />
+    <Build Include="dbo\Tables\CTRTIERS.sql" />
+    <Build Include="dbo\Tables\CRITLIB.sql" />
+    <Build Include="dbo\Tables\CRITDP.sql" />
+    <Build Include="dbo\Tables\CRIT.sql" />
+    <Build Include="dbo\Tables\CPTGLOB_TEST.sql" />
+    <Build Include="dbo\Tables\CPTGLOB.sql" />
+    <Build Include="dbo\Tables\COORDBANQ.sql" />
+    <Build Include="dbo\Tables\CONTNAT.sql" />
+    <Build Include="dbo\Tables\COMPTE.sql" />
+    <Build Include="dbo\Tables\COMMENT_.sql" />
+    <Build Include="dbo\Tables\CATEG.sql" />
+    <Build Include="dbo\Tables\BASELOC.sql" />
+    <Build Include="dbo\Tables\BASE.sql" />
+    <Build Include="dbo\Tables\BANQUE.sql" />
+    <Build Include="dbo\Tables\BANALDET.sql" />
+    <Build Include="dbo\Tables\BAIL.sql" />
+    <Build Include="dbo\Tables\APE.sql" />
+    <Build Include="dbo\Tables\AGENCE_OLD.sql" />
+    <Build Include="dbo\Tables\AGENCE.sql" />
+    <Build Include="Security\VIVERIS_margaux.esteve.sql" />
+    <Build Include="Security\VIVERIS_francois.duong.sql" />
+    <Build Include="Security\VIVERIS_christian.moreau.sql" />
+    <Build Include="Security\VIVERIS_Administrateur.sql" />
+    <Build Include="Security\user_control.sql" />
+    <Build Include="Security\report.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\UPDATE_DATE.sql" />
+    <Build Include="dbo\Stored Procedures\RECUP_ESTIA_PATRIMOINE_CSV.sql" />
+    <Build Include="dbo\Stored Procedures\DELETE_DOUBLE_QUOTE.sql" />
+  </ItemGroup>
+</Project>

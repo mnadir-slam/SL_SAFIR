@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[ESTIA_TSLIEN] (
+    [CTYPTIERS] VARCHAR (2)  NULL,
+    [CTIERS]    VARCHAR (14) NOT NULL,
+    [CTSCAT]    VARCHAR (4)  NOT NULL,
+    [CORG]      VARCHAR (4)  NOT NULL,
+    [TRIG]      VARCHAR (2)  NULL,
+    [LETT]      VARCHAR (2)  NULL
+);
+

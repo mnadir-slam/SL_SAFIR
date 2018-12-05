@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[ESTIA_NEGOCH] (
+    [PK_NEGOCH]   INT             IDENTITY (1, 1) NOT NULL,
+    [FK_ORG]      INT             NULL,
+    [FK_AGENCE]   INT             NULL,
+    [FK_GROUPE]   INT             NULL,
+    [FK_IMMEUB]   INT             NULL,
+    [FK_LOCAL]    INT             NULL,
+    [FK_COMPTE]   INT             NULL,
+    [FK_LOCATION] INT             NULL,
+    [FK_BAIL]     INT             NULL,
+    [CSTE]        VARCHAR (2)     NULL,
+    [CORG]        VARCHAR (4)     NULL,
+    [CCOMPTE]     VARCHAR (22)    NULL,
+    [NOBAIL]      INT             NULL,
+    [CAGENCE]     VARCHAR (4)     NULL,
+    [CGROUPE]     INT             NULL,
+    [CCRITDP]     INT             NULL,
+    [CSCRITDP]    INT             NULL,
+    [CIMMEUB]     INT             NULL,
+    [CLOCAL]      INT             NULL,
+    [OCC]         INT             NULL,
+    [CMETH]       VARCHAR (2)     NULL,
+    [MONTANT]     NUMERIC (17, 2) NULL,
+    [DIFF]        VARCHAR (2)     NULL,
+    [TRIG]        VARCHAR (2)     NULL
+);
+

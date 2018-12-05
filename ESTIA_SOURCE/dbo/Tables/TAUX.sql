@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[TAUX] (
+    [CRUB]    VARCHAR (50) NULL,
+    [DDEB]    VARCHAR (50) NULL,
+    [DFIN]    VARCHAR (50) NULL,
+    [MONTANT] VARCHAR (50) NULL,
+    [TRIG]    VARCHAR (50) NULL,
+    [LACTIF]  VARCHAR (50) NULL
+);
+

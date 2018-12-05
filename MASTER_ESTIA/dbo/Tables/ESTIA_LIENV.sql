@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[ESTIA_LIENV] (
+    [CLEDE]    VARCHAR (30) NULL,
+    [CLEOR]    VARCHAR (40) NULL,
+    [CSTE]     VARCHAR (10) NULL,
+    [MIGCOMPT] NUMERIC (18) NULL,
+    [TRIG]     VARCHAR (50) NULL
+);
+

@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[ESTIA_HQRBAIL] (
+    [CORG]     VARCHAR (4)  NOT NULL,
+    [CAGENCE]  VARCHAR (4)  NOT NULL,
+    [CGROUPE]  INT          NOT NULL,
+    [CIMMEUB]  INT          NOT NULL,
+    [CLOCAL]   INT          NOT NULL,
+    [OCC]      INT          NOT NULL,
+    [DPRORENO] DATE         NULL,
+    [DRELANCE] DATE         NULL,
+    [DSIGNLOC] DATE         NULL,
+    [DRENOUV]  DATE         NOT NULL,
+    [DREEXAM]  DATE         NULL,
+    [TRIG]     VARCHAR (2)  NULL,
+    [CCOMPTE]  VARCHAR (22) NOT NULL,
+    [NOBAIL]   INT          NOT NULL,
+    [TEMOIN]   VARCHAR (2)  NULL,
+    [DREPONSE] VARCHAR (10) NULL,
+    CONSTRAINT [PK_ESTIA_HQRBAIL] PRIMARY KEY CLUSTERED ([CORG] ASC, [CCOMPTE] ASC, [NOBAIL] ASC, [DRENOUV] ASC)
+);
+

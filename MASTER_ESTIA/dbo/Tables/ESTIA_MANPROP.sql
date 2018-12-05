@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[ESTIA_MANPROP] (
+    [PK_MANPROP] INT             IDENTITY (1, 1) NOT NULL,
+    [FK_MANGES]  INT             NULL,
+    [FK_TIERS]   INT             NULL,
+    [CMANDAT]    VARCHAR (16)    NULL,
+    [CQUALPR]    VARCHAR (6)     NULL,
+    [CTYPTIERS]  VARCHAR (2)     NULL,
+    [CTIERS]     VARCHAR (14)    NULL,
+    [PARTPROP]   NUMERIC (17, 2) NULL,
+    [PARTREP]    NUMERIC (17, 2) NULL,
+    [REGISTRE]   VARCHAR (40)    NULL,
+    [REPRES]     VARCHAR (1)     NULL,
+    [TRIG]       VARCHAR (2)     NULL,
+    [CTIERSI]    VARCHAR (14)    NULL,
+    [CTYPTIERSI] VARCHAR (2)     NULL,
+    [CORG]       VARCHAR (4)     NULL,
+    [CCOMPTE]    VARCHAR (22)    NULL,
+    [NOBAIL]     INT             NULL,
+    [CONVOC]     VARCHAR (6)     NULL,
+    [NODOMR]     INT             NULL,
+    [NODOMA]     INT             NULL,
+    [DDEB]       DATE            NULL,
+    [DFIN]       DATE            NULL,
+    [MIGCOMPT]   INT             NULL,
+    [SUIVIASSU]  VARCHAR (2)     NULL,
+    [RK]         INT             NULL
+);
+

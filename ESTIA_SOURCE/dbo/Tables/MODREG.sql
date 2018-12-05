@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[MODREG] (
+    [CMODREG] VARCHAR (5)  NULL,
+    [LMODREG] VARCHAR (50) NULL,
+    [CTYPAI]  VARCHAR (1)  NULL,
+    [TRIG]    VARCHAR (1)  NULL,
+    [LACTIF]  VARCHAR (1)  NULL
+);
+

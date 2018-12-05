@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[APE] (
+    [CAPE]   VARCHAR (50)  NULL,
+    [LAPE]   VARCHAR (250) NULL,
+    [TRIG]   VARCHAR (100) NULL,
+    [LACTIF] VARCHAR (100) NULL
+);
+

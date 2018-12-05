@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[WRK_LOCATION_LOCAL] (
+    [CORG]                        VARCHAR (4)  NOT NULL,
+    [CCOMPTE]                     VARCHAR (22) NOT NULL,
+    [NOBAIL]                      INT          NOT NULL,
+    [DT_PREMIERE_ASSOCIATION_LOT] DATE         NULL,
+    [DT_FIN_ASSOCIATION_LOT]      DATE         NULL,
+    CONSTRAINT [PK_WRK_LOCATION_LOCAL] PRIMARY KEY CLUSTERED ([CORG] ASC, [CCOMPTE] ASC, [NOBAIL] ASC)
+);
+

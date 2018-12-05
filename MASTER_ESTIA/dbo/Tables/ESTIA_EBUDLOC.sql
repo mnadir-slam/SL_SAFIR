@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[ESTIA_EBUDLOC] (
+    [PK_EBUDLOC] INT            IDENTITY (1, 1) NOT NULL,
+    [FK_ORG]     INT            NULL,
+    [FK_AGENCE]  INT            NULL,
+    [FK_GROUPE]  INT            NULL,
+    [CORG]       VARCHAR (4)    NOT NULL,
+    [CAGENCE]    VARCHAR (4)    NOT NULL,
+    [CGROUPE]    INT            NOT NULL,
+    [CBUDLOC]    VARCHAR (16)   NOT NULL,
+    [VERSION]    INT            NOT NULL,
+    [LBUDLOC]    VARCHAR (60)   NULL,
+    [DDEB]       DATE           NULL,
+    [DFIN]       DATE           NULL,
+    [VOTE]       VARCHAR (1)    NULL,
+    [METHREG]    VARCHAR (2)    NULL,
+    [TYPBUD]     VARCHAR (6)    NULL,
+    [OBUDLOC]    VARCHAR (16)   NULL,
+    [COMMENT]    VARCHAR (1000) NULL,
+    [TRIG]       VARCHAR (2)    NULL,
+    [MIGCOMPT]   INT            NULL,
+    [RK]         INT            NULL,
+    [RK_INV]     INT            NULL,
+    CONSTRAINT [PK_ESTIA_EBUDLOC] PRIMARY KEY CLUSTERED ([CORG] ASC, [CAGENCE] ASC, [CGROUPE] ASC, [CBUDLOC] ASC, [VERSION] ASC)
+);
+

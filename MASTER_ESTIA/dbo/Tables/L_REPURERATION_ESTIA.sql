@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[L_REPURERATION_ESTIA] (
+    [ID_LOG]     INT          IDENTITY (1, 1) NOT NULL,
+    [NOM_TABLE]  VARCHAR (50) NULL,
+    [IND_SUCCES] VARCHAR (1)  NULL,
+    [DT_DEBUT]   DATETIME     NULL,
+    [DT_FIN]     DATETIME     NULL,
+    [DUREE]      AS           (left(CONVERT([varchar](50),[DT_FIN]-[DT_DEBUT],(114)),(8))),
+    [NB_LIGNES]  INT          NULL,
+    CONSTRAINT [PK_L_REPURERATION_ESTIA] PRIMARY KEY CLUSTERED ([ID_LOG] ASC)
+);
+

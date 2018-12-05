@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SL_SAFIR", "SL_SAFIR\SL_SAFIR.sqlproj", "{D9F1E4C4-ABBC-4391-A954-B428ABB68AC0}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ESTIA_SOURCE", "ESTIA_SOURCE\ESTIA_SOURCE.sqlproj", "{42AE765B-ADA0-487E-81B0-ABA2F4EBD453}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MASTER_ESTIA", "MASTER_ESTIA\MASTER_ESTIA.sqlproj", "{6F29E353-D216-4093-BA62-0DEF0A9C37C3}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SAFIR_ESTIA", "SAFIR_ESTIA\SAFIR_ESTIA.sqlproj", "{8EB587D1-E264-45EE-B2D3-5CC7C739C53D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +15,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D9F1E4C4-ABBC-4391-A954-B428ABB68AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9F1E4C4-ABBC-4391-A954-B428ABB68AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9F1E4C4-ABBC-4391-A954-B428ABB68AC0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{D9F1E4C4-ABBC-4391-A954-B428ABB68AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9F1E4C4-ABBC-4391-A954-B428ABB68AC0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9F1E4C4-ABBC-4391-A954-B428ABB68AC0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{42AE765B-ADA0-487E-81B0-ABA2F4EBD453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42AE765B-ADA0-487E-81B0-ABA2F4EBD453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42AE765B-ADA0-487E-81B0-ABA2F4EBD453}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{42AE765B-ADA0-487E-81B0-ABA2F4EBD453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42AE765B-ADA0-487E-81B0-ABA2F4EBD453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42AE765B-ADA0-487E-81B0-ABA2F4EBD453}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6F29E353-D216-4093-BA62-0DEF0A9C37C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F29E353-D216-4093-BA62-0DEF0A9C37C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F29E353-D216-4093-BA62-0DEF0A9C37C3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6F29E353-D216-4093-BA62-0DEF0A9C37C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F29E353-D216-4093-BA62-0DEF0A9C37C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F29E353-D216-4093-BA62-0DEF0A9C37C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8EB587D1-E264-45EE-B2D3-5CC7C739C53D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB587D1-E264-45EE-B2D3-5CC7C739C53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB587D1-E264-45EE-B2D3-5CC7C739C53D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8EB587D1-E264-45EE-B2D3-5CC7C739C53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB587D1-E264-45EE-B2D3-5CC7C739C53D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB587D1-E264-45EE-B2D3-5CC7C739C53D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

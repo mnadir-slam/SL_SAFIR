@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[ESTIA_HAVENAN] (
+    [PK_HAVENAN] INT            IDENTITY (1, 1) NOT NULL,
+    [CORG]       VARCHAR (4)    NOT NULL,
+    [CCOMPTE]    VARCHAR (22)   NOT NULL,
+    [NOBAIL]     INT            NOT NULL,
+    [NAVENAN]    INT            NOT NULL,
+    [DDEB]       DATE           NULL,
+    [COMMENT]    VARCHAR (2100) NULL,
+    [TRIG]       VARCHAR (2)    NULL,
+    [NOLOCAT]    INT            NULL,
+    [CMOTIF]     VARCHAR (4)    NULL,
+    [DSIGNATU]   VARCHAR (10)   NULL,
+    CONSTRAINT [PK_ESTIA_HAVENAN] PRIMARY KEY CLUSTERED ([CORG] ASC, [CCOMPTE] ASC, [NOBAIL] ASC, [NAVENAN] ASC)
+);
+

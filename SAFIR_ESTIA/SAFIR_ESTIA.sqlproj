@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SAFIR_ESTIA</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{8eb587d1-e264-45ee-b2d3-5cc7c739c53d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>SAFIR_ESTIA</RootNamespace>
+    <AssemblyName>SAFIR_ESTIA</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\WRK_TRAIT_LOTS.sql" />
+    <Build Include="dbo\Tables\SAP000357473.sql" />
+    <Build Include="dbo\Tables\RCS_COMPLETE.sql" />
+    <Build Include="dbo\Tables\F_ETAT_LOCATIF.sql" />
+    <Build Include="dbo\Tables\F_COMPTABILITE_LOCATAIRE.sql" />
+    <Build Include="dbo\Tables\D_TEMPS.sql" />
+    <Build Include="dbo\Tables\D_RUBRIQUE.sql" />
+    <Build Include="dbo\Tables\D_PROPRIETAIRE.sql" />
+    <Build Include="dbo\Tables\D_MANDAT_GERANCE.sql" />
+    <Build Include="dbo\Tables\D_LOT.sql" />
+    <Build Include="dbo\Tables\D_LOCATAIRE.sql" />
+    <Build Include="dbo\Tables\D_IMMEUBLE.sql" />
+    <Build Include="dbo\Tables\D_BAIL.sql" />
+    <Build Include="dbo\Tables\ACCES_POLE_IMMEUBLE.sql" />
+    <Build Include="dbo\Views\V_LOYER_BASE.sql" />
+    <Build Include="dbo\Views\V_HREVIS.sql" />
+    <Build Include="dbo\Views\V_AVENANT_BAIL.sql" />
+    <Build Include="Security\VIVERIS_margaux.esteve.sql" />
+    <Build Include="Security\VIVERIS_Infoclipdev.sql" />
+    <Build Include="Security\VIVERIS_francois.duong.sql" />
+    <Build Include="Security\VIVERIS_christian.moreau.sql" />
+    <Build Include="Security\VIVERIS_Administrateur.sql" />
+    <Build Include="Security\usr_powerbi.sql" />
+    <Build Include="Security\user_powerbi.sql" />
+    <Build Include="Security\user_control.sql" />
+    <Build Include="Security\report.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\LPAD.sql" />
+    <Build Include="dbo\Functions\InitCap.sql" />
+    <Build Include="dbo\Functions\GetFirstDayOfYear.sql" />
+    <Build Include="dbo\Functions\GetDateFinTerme.sql" />
+    <Build Include="dbo\Functions\GetDateDebutTerme.sql" />
+    <Build Include="dbo\Functions\GetCdTerme.sql" />
+    <Build Include="dbo\Functions\GetBorneSupTrimCourant.sql" />
+    <Build Include="dbo\Functions\GetBorneInfTrimCourant.sql" />
+    <Build Include="dbo\Functions\ufn_SplitMultiValue.sql" />
+    <Build Include="dbo\Functions\GetCautionFinancialData.sql" />
+    <Build Include="dbo\Functions\GetBailInformation.sql" />
+    <Build Include="dbo\Functions\f_LISTE_PROPRIETAIRE_EXPERT_COMPT.sql" />
+    <Build Include="dbo\Functions\f_LISTE_IMMEUBLE_CAIRN.sql" />
+    <Build Include="dbo\Functions\f_HIST_BAUX.sql" />
+    <Build Include="dbo\Functions\f_GLIPRO.sql" />
+    <Build Include="dbo\Functions\f_GLIFOU.sql" />
+    <Build Include="dbo\Functions\f_GLIDG.sql" />
+    <Build Include="dbo\Functions\f_GLI.sql" />
+    <Build Include="dbo\Functions\f_GET_LEASE_VALUES.sql" />
+    <Build Include="dbo\Functions\f_GET_LEASE_FINANCIAL_DATA.sql" />
+    <Build Include="dbo\Functions\f_GET_ANNUAL_LEASE_ALLOWANCES.sql" />
+    <Build Include="dbo\Functions\f_EDP.sql" />
+    <Build Include="dbo\Functions\f_EDD.sql" />
+    <Build Include="dbo\Functions\f_BALANCE_LOCATAIRE.sql" />
+    <Build Include="dbo\Functions\f_BALANCE_FOURNISSEUR.sql" />
+    <Build Include="dbo\Functions\f_BALANCE_DG.sql" />
+    <Build Include="dbo\Functions\SWISS_LIFE_ETAT_LOC_FD.sql" />
+    <Build Include="dbo\Stored Procedures\SWISS_LIFE_ETAT_BAIL.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_SOCIETE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_SIREN_FOURNISSEUR.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_PROPRIETAIRE_EXPERT_COMPT.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_PROPRIETAIRE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_OPERATION.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_LOCATAIRE_ETAT_LOC_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_LOCATAIRE_ETAT_LOC.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_LOCATAIRE_COMPTA_LOCATAIRE_CAIRN.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_LOCATAIRE_COMPTA_LOC_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_LOCATAIRE_COMPTA_LOC.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_LOCATAIRE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_JOURNAL.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_IMMEUBLE_TERTIAIRE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_IMMEUBLE_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_IMMEUBLE_RESIDENTIEL.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_IMMEUBLE_CAIRN.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_IMMEUBLE_AGENCE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_IMMEUBLE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_FOURNISSEUR_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_FOURNISSEUR.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_CONTRAT_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_CONTRAT.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_AGENCE.sql" />
+    <Build Include="dbo\Stored Procedures\INTERFACE_XRT_TASSEMENT.sql" />
+    <Build Include="dbo\Stored Procedures\HIST_BAUX.sql" />
+    <Build Include="dbo\Stored Procedures\GLIPRO.sql" />
+    <Build Include="dbo\Stored Procedures\GLIFOU.sql" />
+    <Build Include="dbo\Stored Procedures\GLIDG.sql" />
+    <Build Include="dbo\Stored Procedures\GLICLI.sql" />
+    <Build Include="dbo\Stored Procedures\GLI.sql" />
+    <Build Include="dbo\Stored Procedures\GET_VACANCE_FINANCIERE.sql" />
+    <Build Include="dbo\Stored Procedures\GET_PK_TEMPS.sql" />
+    <Build Include="dbo\Stored Procedures\GET_PATRIMOINE_ACTIF.sql" />
+    <Build Include="dbo\Stored Procedures\GET_IMMEUBLES_SALEFORCE_V2.sql" />
+    <Build Include="dbo\Stored Procedures\GET_IMMEUBLES_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\GET_FACTURE_DET.sql" />
+    <Build Include="dbo\Stored Procedures\GET_FACTURE.sql" />
+    <Build Include="dbo\Stored Procedures\GET_ENGAGEMENT_FOURNISSEUR.sql" />
+    <Build Include="dbo\Stored Procedures\GET_DETAIL_ENGAGEMENT_FOURNISSEUR.sql" />
+    <Build Include="dbo\Stored Procedures\GET_DETAIL_CONTRAT_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\GET_DETAIL_CONTRAT.sql" />
+    <Build Include="dbo\Stored Procedures\GET_DATE_DEB_OPERATION.sql" />
+    <Build Include="dbo\Stored Procedures\GET_DATE_ANALYSE.sql" />
+    <Build Include="dbo\Stored Procedures\GET_CONTRAT_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\GET_CONTRAT.sql" />
+    <Build Include="dbo\Stored Procedures\GET_BAUX_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\GET_ANNEE_EXERCICE_ENG.sql" />
+    <Build Include="dbo\Stored Procedures\ETAT_LOCATIF_LOT_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\ETAT_LOCATIF_LOT.sql" />
+    <Build Include="dbo\Stored Procedures\ETAT_LOCATIF_BAIL_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\ETAT_LOCATIF_BAIL_PREVISION.sql" />
+    <Build Include="dbo\Stored Procedures\ETAT_LOCATIF_BAIL.sql" />
+    <Build Include="dbo\Stored Procedures\EDP.sql" />
+    <Build Include="dbo\Stored Procedures\EDD.sql" />
+    <Build Include="dbo\Stored Procedures\COMPTABILITE_LOCATAIRE_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\COMPTABILITE_LOCATAIRE_DET_SALEFORCE.sql" />
+    <Build Include="dbo\Stored Procedures\COMPTABILITE_LOCATAIRE_DET.sql" />
+    <Build Include="dbo\Stored Procedures\COMPTABILITE_LOCATAIRE_CAIRN.sql" />
+    <Build Include="dbo\Stored Procedures\COMPTABILITE_LOCATAIRE.sql" />
+    <Build Include="dbo\Stored Procedures\BILAN_PERMANENT.sql" />
+    <Build Include="dbo\Stored Procedures\BALANCE_LOCATAIRE_PBI.sql" />
+    <Build Include="dbo\Stored Procedures\BALANCE_LOCATAIRE.sql" />
+    <Build Include="dbo\Stored Procedures\BALANCE_FOURNISSEUR.sql" />
+    <Build Include="dbo\Stored Procedures\BALANCE_DG.sql" />
+    <Build Include="dbo\Stored Procedures\BALANCE_AGEE.sql" />
+  </ItemGroup>
+</Project>

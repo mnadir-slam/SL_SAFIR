@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[PLAN] (
+    [NM_IMMEUBLE]  FLOAT (53)     NULL,
+    [NOM_IMMEUBLE] NVARCHAR (255) NULL,
+    [CHEMIN_PLAN]  NVARCHAR (255) NULL,
+    [F4]           NVARCHAR (255) NULL
+);
+

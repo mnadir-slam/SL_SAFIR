@@ -1,0 +1,62 @@
+﻿-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[GET_FACTURE_DET]
+( 
+	@DT_DEBUT DATETIME,
+	@DT_FIN DATETIME,
+	@UTIL NVARCHAR(MAX),
+	@TYPE_FACTURE NVARCHAR(MAX),
+	@JOURNAL NVARCHAR(MAX)
+)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+select MOIS
+	 , ANNEE
+	 , UTIL
+	 , LUTIL
+	 , CJOURNAL
+	 , CD_TYPE_FACTURE
+	 , LB_TYPE_FACTURE
+	 , NOPIECE
+from
+(
+	select DATEPART(MONTH, ENTFAC.DATEC) AS MOIS
+		 , DATEPART(YEAR, ENTFAC.DATEC) AS ANNEE
+		 , ENTFAC.UTIL
+		 , MENPRIN.LUTIL
+		 , upper(ENTFAC.CJOURNAL) AS CJOURNAL
+		 , 'FPS' AS CD_TYPE_FACTURE
+		 , 'Factures pré saisies' AS LB_TYPE_FACTURE
+		 , ENTFAC.NOPIECE
+	from MASTER_ESTIA..ESTIA_ENTFAC ENTFAC
+	left join MASTER_ESTIA..ESTIA_MENPRIN MENPRIN
+	on MENPRIN.UTIL = ENTFAC.UTIL
+	where ENTFAC.DATEC between @DT_DEBUT and @DT_FIN
+
+	union
+	select DATEPART(MONTH, ECRITAUX.DATEC) AS MOIS
+		 , DATEPART(YEAR, ECRITAUX.DATEC) AS ANNEE
+		 , ECRITAUX.UTIL
+		 , MENPRIN.LUTIL
+		 , upper(ECRITAUX.CJOURNAL) AS CJOURNAL
+		 , 'FS' AS CD_TYPE_FACTURE
+		 , 'Factures saisies' AS LB_TYPE_FACTURE
+		 , ECRITAUX.NOPIECE 
+	from MASTER_ESTIA..ESTIA_ECRITAUX ECRITAUX
+	left join MASTER_ESTIA..ESTIA_MENPRIN MENPRIN
+	on MENPRIN.UTIL = ECRITAUX.UTIL
+	where ECRITAUX.DATEC between @DT_DEBUT and @DT_FIN
+) SRC
+where CD_TYPE_FACTURE IN (SELECT VALUE FROM dbo.ufn_SplitMultiValue(@TYPE_FACTURE,',')) 
+and UTIL IN (SELECT VALUE FROM dbo.ufn_SplitMultiValue(@UTIL,',')) 
+and CJOURNAL IN (SELECT VALUE FROM dbo.ufn_SplitMultiValue(@JOURNAL,','))
+order by MOIS, ANNEE, UTIL, CD_TYPE_FACTURE, CJOURNAL
+
+END

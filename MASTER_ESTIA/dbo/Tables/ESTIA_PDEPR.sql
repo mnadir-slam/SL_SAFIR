@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[ESTIA_PDEPR] (
+    [cdepr]       INT          NOT NULL,
+    [ldepr]       VARCHAR (60) NULL,
+    [marche]      VARCHAR (2)  NULL,
+    [cdepp]       INT          NULL,
+    [cnatdep]     VARCHAR (10) NULL,
+    [masse]       INT          NULL,
+    [cmasse]      VARCHAR (10) NULL,
+    [debenc]      VARCHAR (2)  NULL,
+    [travpre]     VARCHAR (2)  NULL,
+    [listtyp]     VARCHAR (60) NULL,
+    [cnatana]     VARCHAR (16) NULL,
+    [ccritdp]     INT          NULL,
+    [temtrav]     VARCHAR (1)  NULL,
+    [ccomposa]    VARCHAR (14) NULL,
+    [cmodcomp]    VARCHAR (18) NULL,
+    [gestcomp]    VARCHAR (2)  NULL,
+    [lactif]      VARCHAR (1)  NULL,
+    [exhono]      VARCHAR (2)  NULL,
+    [hcritdp]     INT          NULL,
+    [fnpcritdp]   INT          NULL,
+    [FNPHCRITDP]  INT          NULL,
+    [TEMTRVPREFI] VARCHAR (2)  NULL
+);
+

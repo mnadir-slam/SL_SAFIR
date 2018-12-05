@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[ESTIA_SURFLOC] (
+    [PK_SURFLOC] INT             IDENTITY (1, 1) NOT NULL,
+    [CORG]       VARCHAR (4)     NOT NULL,
+    [CAGENCE]    VARCHAR (4)     NOT NULL,
+    [CGROUPE]    INT             NOT NULL,
+    [CIMMEUB]    INT             NOT NULL,
+    [CLOCAL]     INT             NOT NULL,
+    [SHAB]       NUMERIC (17, 2) NULL,
+    [CSTE]       VARCHAR (6)     NOT NULL,
+    [DEFFET]     DATE            NOT NULL,
+    [SCORR]      NUMERIC (17, 2) NULL,
+    [SCHAU]      NUMERIC (17, 2) NULL,
+    [SGAR]       NUMERIC (17, 2) NULL,
+    [SUTILE]     NUMERIC (17, 2) NULL,
+    [SCUTILE]    NUMERIC (19, 4) NULL,
+    [SANNEXE]    NUMERIC (17, 2) NULL,
+    [DMAJ]       DATE            NULL,
+    [CUTIL]      VARCHAR (24)    NULL,
+    [COEF]       NUMERIC (19, 4) NULL,
+    [TRIG]       VARCHAR (2)     NULL,
+    [SREELLE]    NUMERIC (17, 2) NULL,
+    [SIMPOS]     NUMERIC (17, 2) NULL,
+    [CONVENT]    VARCHAR (1)     NULL,
+    [MIGCOMPT]   INT             NULL,
+    [LOCAL_ID]   VARCHAR (2)     NULL,
+    CONSTRAINT [PK_ESTIA_SURFLOC] PRIMARY KEY CLUSTERED ([CORG] ASC, [CAGENCE] ASC, [CGROUPE] ASC, [CIMMEUB] ASC, [CLOCAL] ASC, [CSTE] ASC, [DEFFET] ASC)
+);
+

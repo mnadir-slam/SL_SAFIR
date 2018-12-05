@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[WRK_MANGES_MANTVA] (
+    [CMANDAT] VARCHAR (16)    NOT NULL,
+    [TAUXD]   NUMERIC (17, 2) NULL
+);
+

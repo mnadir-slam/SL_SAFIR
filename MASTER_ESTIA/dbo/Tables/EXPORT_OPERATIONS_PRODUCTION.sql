@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[EXPORT_OPERATIONS_PRODUCTION] (
+    [IDENTIFIANT_DREAMFOLDER_OPERATION] NUMERIC (38)   NULL,
+    [DT_CREATION_DOSSIER]               NVARCHAR (255) NULL,
+    [CD_OPERATION_ESTIA]                NUMERIC (38)   NULL,
+    [LB_OPERATION_ESTIA]                NVARCHAR (255) NULL,
+    [NM_IMMEUBLE_ESTIA]                 INT            NULL,
+    [DT_CREATION_OPERATION]             NVARCHAR (255) NULL,
+    [NOM_IMMEUBLE_ESTIA]                NVARCHAR (255) NULL,
+    [CD_TRANCHE]                        INT            NULL
+);
+
