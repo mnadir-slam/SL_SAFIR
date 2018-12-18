@@ -263,7 +263,6 @@
     <Build Include="Security\usersf.sql" />
     <Build Include="Security\user_test.sql" />
     <Build Include="Security\user_excel.sql" />
-    <Build Include="Security\user_control.sql" />
     <Build Include="Security\report.sql" />
     <Build Include="Security\intranet.sql" />
     <Build Include="Security\RoleMemberships.sql" />
@@ -284,5 +283,8 @@
     <Build Include="dbo\Stored Procedures\FILL_SAFIR_PROPERTY.sql" />
     <Build Include="dbo\Stored Procedures\FILL_ETAT_LOCATIF.sql" />
     <Build Include="dbo\Stored Procedures\BUILD_WRK_TABLES.sql" />
+    <Build Include="dbo\Tables\ESTIA_TYPROC.sql" />
+    <Build Include="dbo\Tables\ESTIA_METHCAL.sql" />
+    <Build Include="dbo\Tables\ESTIA_CRTIERS.sql" />
   </ItemGroup>
 </Project>

@@ -89,7 +89,6 @@
     <Build Include="Security\VIVERIS_Administrateur.sql" />
     <Build Include="Security\usr_powerbi.sql" />
     <Build Include="Security\user_powerbi.sql" />
-    <Build Include="Security\user_control.sql" />
     <Build Include="Security\report.sql" />
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="dbo\Functions\LPAD.sql" />
@@ -185,5 +184,6 @@
     <Build Include="dbo\Stored Procedures\BALANCE_FOURNISSEUR.sql" />
     <Build Include="dbo\Stored Procedures\BALANCE_DG.sql" />
     <Build Include="dbo\Stored Procedures\BALANCE_AGEE.sql" />
+    <Build Include="dbo\Stored Procedures\ENGAGEMENT_OPERATIONS.sql" />
   </ItemGroup>
 </Project>

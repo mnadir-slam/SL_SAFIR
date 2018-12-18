@@ -1,2 +1,4 @@
-﻿CREATE USER [usersf];
+﻿CREATE USER [usersf] FOR LOGIN [usersf];
+
+
 

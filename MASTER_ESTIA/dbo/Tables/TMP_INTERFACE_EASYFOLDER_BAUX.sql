@@ -10,3 +10,53 @@
     [DT_FIN]                     DATETIME       NULL
 );
 
+
+
+
+GO
+GRANT VIEW DEFINITION
+    ON OBJECT::[dbo].[TMP_INTERFACE_EASYFOLDER_BAUX] TO [user_test]
+    AS [dbo];
+
+
+GO
+GRANT VIEW CHANGE TRACKING
+    ON OBJECT::[dbo].[TMP_INTERFACE_EASYFOLDER_BAUX] TO [user_test]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[TMP_INTERFACE_EASYFOLDER_BAUX] TO [user_test]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[TMP_INTERFACE_EASYFOLDER_BAUX] TO [user_test]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[TMP_INTERFACE_EASYFOLDER_BAUX] TO [user_test]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[TMP_INTERFACE_EASYFOLDER_BAUX] TO [user_test]
+    AS [dbo];
+
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[TMP_INTERFACE_EASYFOLDER_BAUX] TO [user_test]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[TMP_INTERFACE_EASYFOLDER_BAUX] TO [user_test]
+    AS [dbo];
+

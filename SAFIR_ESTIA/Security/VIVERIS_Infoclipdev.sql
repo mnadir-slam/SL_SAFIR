@@ -1,2 +1,4 @@
-﻿CREATE USER [VIVERIS\Infoclipdev];
+﻿CREATE USER [VIVERIS\Infoclipdev] FOR LOGIN [VIVERIS\Infoclipdev];
+
+
 

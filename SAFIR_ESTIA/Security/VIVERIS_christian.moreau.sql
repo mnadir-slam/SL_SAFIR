@@ -1,2 +1,4 @@
-﻿CREATE USER [VIVERIS\christian.moreau];
+﻿CREATE USER [VIVERIS\christian.moreau] FOR LOGIN [VIVERIS\christian.moreau];
+
+
 

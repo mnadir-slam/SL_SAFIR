@@ -1,2 +1,4 @@
-﻿CREATE USER [report];
+﻿CREATE USER [report] FOR LOGIN [report];
+
+
 
