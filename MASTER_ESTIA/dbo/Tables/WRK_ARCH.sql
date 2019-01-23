@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[WRK_ARCH] (
+    [NUM_ARCH] VARCHAR (50) NOT NULL
+);
+

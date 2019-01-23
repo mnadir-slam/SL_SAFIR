@@ -40,3 +40,11 @@ ALTER ROLE [db_datareader] ADD MEMBER [VIVERIS\christian.moreau];
 GO
 ALTER ROLE [db_owner] ADD MEMBER [user_test];
 
+
+GO
+ALTER ROLE [db_datawriter] ADD MEMBER [abo_rapport];
+
+
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [abo_rapport];
+

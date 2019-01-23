@@ -185,5 +185,8 @@
     <Build Include="dbo\Stored Procedures\BALANCE_DG.sql" />
     <Build Include="dbo\Stored Procedures\BALANCE_AGEE.sql" />
     <Build Include="dbo\Stored Procedures\ENGAGEMENT_OPERATIONS.sql" />
+    <Build Include="Security\abo_rapport.sql" />
+    <Build Include="dbo\Stored Procedures\GET_NUM_ARCH.sql" />
+    <Build Include="dbo\Stored Procedures\GET_BAUX_SALEFORCE_2.sql" />
   </ItemGroup>
 </Project>

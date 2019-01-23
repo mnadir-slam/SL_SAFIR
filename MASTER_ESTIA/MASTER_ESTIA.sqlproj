@@ -286,5 +286,9 @@
     <Build Include="dbo\Tables\ESTIA_TYPROC.sql" />
     <Build Include="dbo\Tables\ESTIA_METHCAL.sql" />
     <Build Include="dbo\Tables\ESTIA_CRTIERS.sql" />
+    <Build Include="dbo\Tables\WRK_ARCH.sql" />
+    <Build Include="dbo\Tables\L_INTERFACE_EASYFOLDER_CONTRATS_BCK.sql" />
+    <Build Include="dbo\Tables\HIST_ARCH.sql" />
+    <Build Include="Security\abo_rapport.sql" />
   </ItemGroup>
 </Project>
