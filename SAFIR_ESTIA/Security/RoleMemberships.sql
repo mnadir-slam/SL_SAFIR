@@ -20,3 +20,7 @@ ALTER ROLE [db_datawriter] ADD MEMBER [abo_rapport];
 GO
 ALTER ROLE [db_datareader] ADD MEMBER [abo_rapport];
 
+
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [VIVERIS\margaux.esteve];
+
