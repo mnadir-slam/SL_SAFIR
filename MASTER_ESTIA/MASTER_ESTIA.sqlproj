@@ -291,5 +291,13 @@
     <Build Include="dbo\Tables\HIST_ARCH.sql" />
     <Build Include="Security\abo_rapport.sql" />
     <Build Include="dbo\Tables\ESTIA_AVENAN.sql" />
+    <Build Include="dbo\Tables\WRK_INTERFACE_EASYFOLDER_OPERATIONS_TEST.sql" />
+    <Build Include="dbo\Tables\WRK_INTERFACE_EASYFOLDER_CONTRATS_TEST.sql" />
+    <Build Include="dbo\Tables\WRK_INTERFACE_EASYFOLDER_BAUX_TEST.sql" />
+    <Build Include="dbo\Tables\ESTIA_SECURITE.sql" />
+    <Build Include="dbo\Functions\ALERTES_MAIL.sql" />
+    <Build Include="dbo\Stored Procedures\XP_SEND_MAIL.sql" />
+    <Build Include="dbo\Stored Procedures\SEND_MAIL_TRAITEMENT.sql" />
+    <Build Include="dbo\Stored Procedures\RECUP_JOB_HISTORY.sql" />
   </ItemGroup>
 </Project>
