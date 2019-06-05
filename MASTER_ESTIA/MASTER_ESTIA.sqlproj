@@ -299,5 +299,10 @@
     <Build Include="dbo\Stored Procedures\XP_SEND_MAIL.sql" />
     <Build Include="dbo\Stored Procedures\SEND_MAIL_TRAITEMENT.sql" />
     <Build Include="dbo\Stored Procedures\RECUP_JOB_HISTORY.sql" />
+    <Build Include="dbo\Tables\RECH_DOUBLON.sql" />
+    <Build Include="dbo\Tables\WRK_INTERFACE_EASYFOLDER_FACTURES.sql" />
+    <Build Include="dbo\Tables\P_CRITERES.sql" />
+    <Build Include="dbo\Tables\L_INTERFACE_EASYFOLDER_FACTURES.sql" />
+    <Build Include="dbo\Stored Procedures\TRAIT_FACTURES_EASYFOLDER.sql" />
   </ItemGroup>
 </Project>

@@ -190,5 +190,10 @@
     <Build Include="dbo\Stored Procedures\GET_BAUX_SALEFORCE_2.sql" />
     <Build Include="dbo\Functions\f_GET_ANNUAL_RENT_FREE.sql" />
     <Build Include="dbo\Stored Procedures\EDD_CAIRN.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_FOURNISSEUR_CAIRN.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_SOUS_CRITERE.sql" />
+    <Build Include="dbo\Stored Procedures\LISTE_CRITERE.sql" />
+    <Build Include="dbo\Stored Procedures\BUDGET_CHARGES_DETAIL.sql" />
+    <Build Include="dbo\Stored Procedures\BUDGET_CHARGES.sql" />
   </ItemGroup>
 </Project>

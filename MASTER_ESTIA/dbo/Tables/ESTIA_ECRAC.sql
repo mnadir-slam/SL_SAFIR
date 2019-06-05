@@ -1,4 +1,5 @@
 ﻿CREATE TABLE [dbo].[ESTIA_ECRAC] (
+    [PK_ECRAC]        INT             IDENTITY (1, 1) NOT NULL,
     [IND_LIEN_HDEPCS] VARCHAR (1)     CONSTRAINT [DF_ESTIA_ECRAC_IND_LIEN_HDEPCS] DEFAULT ('N') NOT NULL,
     [DT_SAISIE]       DATETIME        NULL,
     [FK_ECRITAUX]     INT             NULL,
@@ -55,4 +56,6 @@
     [ECRAC_ID]        INT             NULL,
     [MIGCOMPT]        INT             NULL
 );
+
+
 

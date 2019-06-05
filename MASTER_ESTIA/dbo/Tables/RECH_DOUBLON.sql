@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[RECH_DOUBLON] (
+    [ID_Num]                     INT            IDENTITY (1, 1) NOT NULL,
+    [IDENTIFIANT_DREAM_IMMEUBLE] NVARCHAR (50)  NULL,
+    [IDENTIFIANT_ESTIA_IMMEUBLE] NUMERIC (38)   NULL,
+    [NOM_IMMEUBLE_ESTIA]         NVARCHAR (255) NULL,
+    [NUM_CONTRAT]                NUMERIC (18)   NULL,
+    [LB_CONTRAT]                 NVARCHAR (255) NULL,
+    [DT_FIN_PRESTATION]          DATETIME       NULL
+);
+
